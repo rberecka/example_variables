@@ -8,5 +8,5 @@ terraform {
 }
 
 resource "random_pet" "pet" {
-  length           = var.word-count
+  length           = var.word_count
 }
