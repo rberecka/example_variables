@@ -9,7 +9,7 @@ variable "availability_zones" {
 }
 
 variable "secret_key" {
-  type = "string"
+  type = string
   sensitive = true
   description = "Your secret key."
 }
@@ -17,18 +17,18 @@ variable "secret_key" {
 # This variable has a default value and will not show up
 # in the variable editor
 variable "aws_region_default" {
-  type = "string"
+  type = string
   description = "Your aws region"
   default = "usw1"
 }
 
 variable "aws_region_no_default" {
-  type = "string"
+  type = string
   description = "Choose your aws region. Must be usw1 or usw2"
 }
 
 variable "aws_bucket_name" {
-  type = "string"
+  type = string
 }
 
 variable "cpu_capacity" {
@@ -36,12 +36,12 @@ variable "cpu_capacity" {
   description = "Number of CPUs for your service. Must be less than 8"
   sensitive = false
   validation {
-    condition = var < 8
+    condition = var.cpu_capacity < 8
     error_message = "See the SRE team about capacity management."
   }
 }
 
 variable "admin_user" {
   type = map
-  description = "{name = <YOUR_NAME>, email = <YOUR_EMAIL>}"
+  description = "{ \"name\" = \"<YOUR_NAME>\" \"email\" = \"<YOUR_EMAIL>\"}"
 }
