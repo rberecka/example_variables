@@ -53,8 +53,3 @@ variable "admin_user" {
   type = map
   description = "{ \"name\" = \"<YOUR_NAME>\", \"email\" = \"<YOUR_EMAIL>\"}"
 }
-
-variable "nullable" {
-  type = null
-  description = "Curious what the null type does on it's own"
-}
