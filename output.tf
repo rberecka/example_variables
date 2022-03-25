@@ -5,7 +5,7 @@ output "print-them-all" {
             Word Count: ${var.word_count}
             Sleep Seconds: ${var.sleep_seconds}
             TF won't let you print your sensitive variable, 
-            Availability Zones: ${var.availability_zones.first},
+            Could not print a list for Availability Zones,
             AWS Region No Default: ${var.aws_region_no_default}
             AWS Bucket Name${var.aws_bucket_name}
             CPU Capacity, try bigger than 10${var.cpu_capacity},
