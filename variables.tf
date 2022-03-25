@@ -1,3 +1,6 @@
+# If you keep these variables as HCL after they are created
+# You must surround strings in "" 's. For a successful plan.
+
 variable "word_count" {
   type = number
   description = "A locally executed script will wait this amout of time between retries"
