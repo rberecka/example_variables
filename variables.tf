@@ -43,5 +43,5 @@ variable "cpu_capacity" {
 
 variable "admin_user" {
   type = map
-  description = "{ \"name\" = \"<YOUR_NAME>\" \"email\" = \"<YOUR_EMAIL>\"}"
+  description = "{ \"name\" = \"<YOUR_NAME>\", \"email\" = \"<YOUR_EMAIL>\"}"
 }
