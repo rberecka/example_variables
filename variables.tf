@@ -55,4 +55,5 @@ variable "admin_user" {
 }
 
 variable "no_type" {
+  description = "no type given in config"
 }
