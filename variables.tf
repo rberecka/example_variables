@@ -45,8 +45,3 @@ variable "cpu_capacity" {
     error_message = "See the SRE team about capacity management."
   }
 }
-
-variable "admin_user" {
-  type = map
-  description = "{ \"name\" = \"admin", \"email\" = \"admin@example.com\"}"
-}
