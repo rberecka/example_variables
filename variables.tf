@@ -35,9 +35,6 @@ variable "aws_region_no_default" {
   description = "Choose your aws region. Must be usw1 or usw2"
 }
 
-variable "aws_bucket_name" {
-  type = string
-}
 
 variable "cpu_capacity" {
   type = number
@@ -51,7 +48,7 @@ variable "cpu_capacity" {
 
 variable "admin_user" {
   type = map
-  description = "{ \"name\" = \"<YOUR_NAME>\", \"email\" = \"<YOUR_EMAIL>\"}"
+  description = "{ \"name\" = \"admin", \"email\" = \"admin@example.com"}"
 }
 
 variable "no_type" {
